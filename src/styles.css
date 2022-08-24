@@ -1,0 +1,317 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+body{
+    background-color: #170720;
+    color: rgb(200, 193, 202);
+    font-family:'Raleway','Arial Narrow', Arial, sans-serif;
+    border: 0px;
+    margin: 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;               
+}
+  
+body::-webkit-scrollbar-track {
+    background: none;        
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(97, 96, 97);    
+    border-radius: 20px;       
+}  
+
+footer{
+    text-align: center;
+    margin-top: 10pc;
+    padding: 2pc;
+}
+
+@keyframes down {
+    from {
+        opacity: 0;
+        transform: translate(0,-2pc);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translate(0,0pc);
+      }
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: rgb(200, 193, 202);
+     text-decoration: none;
+}
+    
+button{
+    height: 3%;
+    padding: 0.5pc;
+    background-color: #170720;
+    color: #ff00dd;
+    border: #ff00dd 2px solid;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-top: 0.6%;
+    font-weight: bolder;
+    transition: 0.2s;
+    opacity: 1;
+}
+
+button:hover{
+    background-color: #350e3d;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
+
+.rose{
+    color: #ff00dd;
+}
+
+.white{
+    color: white;
+}
+
+
+
+
+@media(min-width: 991px){
+    body{
+        font-size: 14px;
+    }
+
+    header{
+        background-color: #170720;
+        padding: 0.1%;
+        display: flex;
+        box-shadow: 2px 2px 6px rgb(0, 0, 0);
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 20;
+        animation-duration: 0.5s;
+        animation-name: down;
+        opacity: 0.9;
+    }
+    
+    
+    header b{
+        color: #ff00dd;
+        font-size: 1.5pc;
+        margin-left: 21%;
+        margin-top: 2%;
+        opacity: 1;
+    }
+    
+    header ol{
+        width: 25%;
+        display: flex;
+        opacity: 1;
+        list-style-type:decimal-leading-zero;
+    }
+    
+    header li{
+        margin-top: 2%;
+        margin-left: 10%;
+        color: #ff00dd;
+        font-weight: bolder;
+        opacity: 1;
+    }
+    
+    header li a{
+        font-weight:lighter;
+        transition: 0.2s;
+        opacity: 1;
+    }
+    
+    header li a:hover{
+        color:#ff00dd;
+    }
+    
+    .center ul{
+        color: #ff00dd;
+        display: flex;
+    }
+    
+    .center ul li{
+        margin-right: 2pc;
+    }
+    
+    .center ul span{
+        color: white;
+    }
+    
+    .full{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .circle{
+        border: #ff00dd 2px solid;
+        width: 2pc;
+        height: 2pc;
+        border-radius: 50%;
+        display:flex;
+        margin: 0.7%;
+        margin-left: 2%;
+        margin-right: 60%;
+        transition: 0.2s;
+    }
+    
+    .circle:hover{
+        background-color: #350e3d ;
+    }
+    
+    .social{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 5%;
+    }
+    
+    .social li{
+        position:relative;
+        width: 1.3pc;
+        list-style: none;
+        margin-bottom: 100%;
+        transition: 0.2s;
+    }
+    
+    .social li:hover{
+        transform: translate(0%, -20%);
+    }
+    
+    svg:hover{
+        color: #ff00dd;
+    }
+    
+    .social::after{
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        background-color: rgb(200, 193, 202);
+        margin-left: 0.5pc;
+        position: fixed;
+        bottom: 0;
+    }
+    
+    .right{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: -4pc;
+        transform: rotate(90deg);
+        display: flex;
+        margin-bottom: 7.5pc;
+        transition: 0.2s;
+        height: 2pc;
+    }
+    
+    .right:hover{
+        margin-bottom: 8.5pc;
+    }
+    
+    .right a:hover{
+        color: #ff00dd;
+    }
+    
+    .line{
+        content: "";
+        display: block;
+        width: 90px;
+        height: 1px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 7pc;
+        margin-top: 0.5pc;
+        margin-left: 2pc;
+    }
+    
+    
+    footer{
+        text-align: center;
+        margin-top: 10pc;
+        padding: 2pc;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px){
+    html, body{
+        overflow-x: hidden;
+    }
+    header{
+        display: none;
+    }
+
+    .center{
+        transform: translate(-1pc);
+    }
+
+    .center ul{
+        display: flex;
+        flex-direction: column;
+        color: #ff00dd;
+    }
+
+    .center li{
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .social{
+        display: none;
+    }
+
+    .right{
+        display: none;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+
+    header{
+        display: none;
+    }
+
+    .center{
+        transform: translate(-1pc);
+    }
+
+    .center ul{
+        display: flex;
+        flex-direction: column;
+        color: #ff00dd;
+    }
+
+    .center li{
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+
+    .social{
+        display: none;
+    }
+
+    .right{
+        display: none;
+    }
+
+    footer{
+        text-align: center;
+        margin-top: 10pc;
+        padding: 1pc;
+        width: 23pc;
+        font-size: 10px;
+    }
+}
+
