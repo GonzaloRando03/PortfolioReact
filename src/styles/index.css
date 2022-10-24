@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+:root {
+    --main-bg-color: rgb(0, 255, 76);
+    --secondary-color: rgb(37, 190, 37);
+    --special-font-color: rgb(37, 190, 37);
+    --main-font-color: black;
+    --secondary-color-hover: rgb(73, 243, 73);
+}
+
+body{
+    font-family:'Raleway','Arial Narrow',Segoe UI, Frutiger, Dejavu Sans, Helvetica Neue Arial, sans-serif;
+    margin: 0%;
+    color: rgb(200, 193, 202) ;
+    background: url('../img/Circuit\ Board.svg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #071829;
+    width: 100%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    display: flex;
+    justify-content: left;
+}
+
+.right{
+    display: flex;
+    justify-content: right;
+}
+
+.flex{
+    display: flex;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.block{
+    display: block;
+}
+
+.full{
+    width: 100%;
+}
+
+.mt{
+    margin-top: 5pc;
+}
+
+.mt1{
+    margin-top: 1pc;
+}
+
+.mt2{
+    margin-top: 2pc;
+}
+
+.mt3{
+    margin-top: 3pc;
+}
+
+.mt4{
+    margin-top: 4pc;
+}
+
+.mt5{
+    margin-top: 5pc;
+}
+
+.mt6{
+    margin-top: 6pc;
+}
+
+.mt7{
+    margin-top: 7pc;
+}
+
+.mt8{
+    margin-top: 8pc;
+}
+
+.mt9{
+    margin-top: 9pc;
+}
+
+.mt10{
+    margin-top: 10pc;
+}
+
+.ml1{
+    margin-left: 1pc;
+}
+
+.ml2{
+    margin-left: 2pc;
+}
+
+.ml3{
+    margin-left: 3pc;
+}
+.ml4{
+    margin-left: 4pc;
+}
+.ml5{
+    margin-left: 5pc;
+}
+.ml6{
+    margin-left: 6pc;
+}
+
+.ml7{
+    margin-left: 7pc;
+}
+
+.ml8{
+    margin-left: 8pc;
+}
+
+.ml9{
+    margin-left: 9pc;
+}
+
+.ml10{
+    margin-left: 10pc;
+}
+
+.mr1{
+    margin-right: 1pc;
+}
+
+.mr2{
+    margin-right: 2pc;
+}
+
+.mr3{
+    margin-right: 3pc;
+}
+.mr4{
+    margin-right: 4pc;
+}
+.mr5{
+    margin-right: 5pc;
+}
+.mr6{
+    margin-right: 6pc;
+}
+
+.mr7{
+    margin-right: 7pc;
+}
+
+.mr8{
+    margin-right: 8pc;
+}
+
+.mr9{
+    margin-right: 9pc;
+}
+
+.mr10{
+    margin-right: 10pc;
+}

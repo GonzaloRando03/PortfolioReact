@@ -1,0 +1,502 @@
+.loaderBackground{
+  background-color: #071829;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.spinner{
+  border: 4px solid var(--main-bg-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-left-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+.loaderDiv{
+  margin-top: 45vh;
+  text-align: center;
+}
+
+.loaderDiv span{
+  font-size: 40px;
+  color: var(--main-bg-color);
+  position: fixed;
+  transform: translate(-15px, -60px);
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.transition{
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: #071829;
+  z-index: 21;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: none;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--main-bg-color);    
+  border-radius: 20px;       
+} 
+
+a:link, a:visited,  a:hover, a:active
+{
+    color: white;
+     text-decoration: none;
+}
+
+footer{
+  padding: 1%;
+  background-color: #071829;
+  text-align: center;
+}
+    
+.menuIcon{
+  display: none;
+}
+
+.menuMobile{
+  display: none;
+}
+
+button{
+    height: 3%;
+    padding: 0.5pc;
+    background-color: #071829;
+    color: var(--main-bg-color);
+    border: var(--main-bg-color) 2px solid;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-top: 0.6%;
+    font-weight: bolder;
+    transition: 0.2s;
+    opacity: 1;
+}
+
+button:hover{
+    background-color: #0f3616;
+    cursor: pointer;
+}
+
+.white{
+  color: white;
+}
+
+.green{
+  color: var(--main-bg-color);
+}
+
+@media(min-width: 1201px){
+
+  .content{
+    width: 80%;
+  }
+
+  header{
+    display: flex;
+    background-color: #071829;
+    opacity: 0.9;
+    width: 100%;
+    position: fixed;
+    color: var(--main-bg-color);
+    padding: 0.5%;
+    box-shadow: 10px 10px 33px 3px rgba(0,0,0,0.50);
+    justify-content: space-between;
+    top: 0;
+    z-index: 20;
+  }
+
+  header button{
+    display: none;
+  }
+
+  nav{
+    display: none;
+  }
+
+  .circle{
+    border: var(--main-bg-color) solid ;
+    border-radius: 50%;
+    width: 2.5pc;
+    height: 2.5pc;
+    text-align: center;
+    font-size: 200%;
+    margin-left: 2%;
+    display: block;
+  }
+
+  header ol{
+    display: flex;
+    text-align: right;
+    width: 30pc;
+  }
+
+  header li{
+    margin-left: 7%;
+  }
+
+  header li a{
+    transition: 0.2s;
+  }
+
+  header li a:hover{
+    color: var(--main-bg-color);
+  }
+
+  .social{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 6pc;
+    z-index: 19;
+  }
+
+  .social::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    background-color: rgb(200, 193, 202);
+    margin-left: 0.5pc;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .social li{
+    position:relative;
+    width: 1.3pc;
+    list-style: none;
+    transition: 0.2s;
+    margin-bottom: 0.7pc;
+  }
+
+  .social li:hover{
+    transform: translate(0%, -20%);
+  }
+
+  svg:hover{
+    color: var(--main-bg-color);
+  }
+
+  .mailRight {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: rotate(90deg) translate(0pc, -2pc);
+    margin-bottom: 12pc;
+    transition: 0.2s;
+    z-index: 19;
+  }
+
+  .mailRight:hover{
+    margin-bottom: 13pc;
+  }
+
+  .mailRight a:hover{
+    color: var(--main-bg-color);
+  }
+
+  .mailRight::after{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: rgb(200, 193, 202);
+    margin-left: 0.5pc;
+    position: fixed;
+    bottom: 0;
+    transform: translate(14pc, -0.5pc);
+  }
+
+  .init{
+    margin-top: 15%;
+    width: 80%;
+    margin-left: 15%;
+  }
+
+  #init1{
+    color: var(--main-bg-color);
+    font-size: 20px;
+  }
+
+  .init h1{
+    font-size: 5pc;
+    margin: 0%;
+  }
+
+  #init3{
+    color: rgb(168, 167, 167);
+    font-size: 5pc;
+  }
+
+  #init4{
+    color: rgb(168, 167, 167);
+    font-size: 20px;
+    width: 70%;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+
+  .about{
+    width: 70%;
+    margin-top: 20pc;
+    margin-left: 15%;
+    margin-bottom: 20%;
+  }
+
+  .title::after{
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: rgb(200, 193, 202);
+    margin-left: 0.5pc;
+    transform: translate(12pc, -1pc);
+  }
+
+  .aboutContent{
+    display: flex;
+  }
+
+  .aboutText{
+    width: 60%;
+  }
+
+  .imgAbout img{
+    width: 15pc;
+    height: 15pc;
+    margin-left: 4pc;
+    border-radius: 5px;
+    z-index: 11;
+  }
+
+  .aboutGreen{
+    content: "";
+    display: block;
+    width: 15pc;
+    height: 15pc;
+    transform: translate( 4pc, 0pc);
+    border-radius: 5px;
+    z-index: 10;
+    position: absolute;
+    opacity: 0.4;
+    transition: 0.5s;
+    background-color: var(--main-bg-color);
+  }
+
+  .aboutGreen:hover{
+    opacity: 0;
+  }
+
+  .imgAbout::after{
+    content: "";
+    display: block;
+    width: 15pc;
+    height: 15pc;
+    border: 2px solid var(--main-bg-color);
+    transform: translate( 5pc, -14pc);
+    border-radius: 10px;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .tech{
+    margin-left: 15%;
+  }
+
+  .roulete{
+    width: 80%;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-top: 0.5pc;
+    padding-bottom: 0.5pc;
+  }
+
+  .techImg{
+    width: 20%;
+    margin-left: 5%;
+    transition: 0.5s;
+  }
+
+  .techImg:hover{
+    transform: scale(1.2);
+  }
+
+  .projects{
+    margin-top: 20%;
+  }
+
+  .projects .title{
+    margin-left: 10%;
+  }
+
+  .web{
+    margin-right: 5%;
+    margin-bottom: 15%;
+  }
+
+  .webImg{
+    width: 30pc;
+    height: 16pc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .webBefore{
+    content: "";
+    display: block;
+    width: 30pc;
+    height: 16pc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10;
+    position: absolute;
+    opacity: 0.4;
+    transition: 0.5s;
+    background-color: var(--main-bg-color);
+  }
+  
+  .webBefore a{
+    font-size: 30px;
+    color: #071829;
+    text-align: center;
+    padding: 25%;
+    display: block;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .webBefore a:hover{
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .webBefore:hover{
+    opacity: 0.9;
+  }
+
+  .webFooter{
+    width: 28pc;
+    padding: 1pc;
+    text-align: justify;
+    background-color: #0b2642;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+  }
+
+  .projectImg{
+    width: 35pc;
+    height: 17pc;
+    border-radius: 10px;
+  }
+
+  .projectGreen{
+    content: "";
+    display: block;
+    width: 34.7pc;
+    height: 17pc;
+    border-radius: 10px;
+    z-index: 10;
+    position: absolute;
+    opacity: 0.4;
+    transition: 0.5s;
+    background-color: var(--main-bg-color);
+  }
+
+  .projectGreen a{
+    padding: 9pc;
+    display: block;
+    opacity: 0;
+  }
+
+  .projectGreen:hover{
+    opacity: 0;
+  }
+
+  .left .projectGreen{
+    margin-left: 16.3pc;
+  }
+
+  .left ul{
+    margin-left: 15pc;
+  }
+
+  .projectContentRight{
+    background-color: #0b2642;
+    padding: 1pc;
+    border-radius: 10px;
+    width: 35pc;
+    position: absolute;
+    z-index: 11;
+    transform: translate(15pc, -14pc);
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+  }
+
+  .projectContentLeft{
+    background-color: #0b2642;
+    padding: 1pc;
+    border-radius: 10px;
+    width: 35pc;
+    position: absolute;
+    z-index: 11;
+    transform: translate(-0pc, -14pc);
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+  }
+
+  .projectTitle{
+    width: 16pc;
+    height: 10pc;
+    margin-left: 1%;
+    text-align: right;
+    transform: translate(0, -1pc);
+  }
+
+  .left .projectTitle{
+    text-align: left;
+  }
+
+  .project{
+    margin-bottom: 10%;
+  }
+
+  .project ul li{
+    margin-right: 2.5pc;
+  }
+
+  .contact{
+    text-align: center;
+    margin: 10%;
+    font-size: 20px;
+  }
+
+  .contactTitle{
+    font-size: 30px;
+  }
+
+  .contact button{
+    font-size: 15px;
+    padding: 1pc;
+  }
+
+}
